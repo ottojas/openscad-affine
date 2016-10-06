@@ -1,5 +1,23 @@
 //  Extra linear algebra/geometry additions to open scad.
-/*        LICENSE HERE
+/*
+ *  Copyright (C) 20016 Otto Smith, <otto@123phase.com>
+ *
+ *  This program is free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program; if not, write to the Free Software
+ *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *************************************************************************************
+ 
+
 Support 2d and 3d functions only.  Some will work with others but not supported.
 Affine transform (affine) is implemented as a list of a matrix and a vector.
 [ [[,,],[,,],[,,]], [,,] ]
@@ -33,7 +51,7 @@ c2p     cartesian to polar
 //// Modules defined by this library.
 apply   Module is passed an affine transform which is applied to all children.
 //// Other functions defined by library.
-polyflat  Takes lists of points and faces as required as arguments to polygon, and combines
+polyflat  Takes lists of points and faces as required as arguments to polyhedron, and combines
           them into a single list of faces and points
 
 */
