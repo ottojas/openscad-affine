@@ -266,4 +266,5 @@ function polyflat(lop) =
          faces=[for(a=facetious) for(b=a) b ]     
        ) 
      [points, faces]; 
-    
+
+
