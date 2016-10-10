@@ -29,7 +29,7 @@ function reduce(func,vec) =
      len(vec)==2 ? @func(vec[0],vec[1]) : @func(vec[0],reduce(func,[for (i=[1:len(vec)-1]) vec[i]])); 
 
 function map(func,vec) =
-       [for (i=vec) @func(vec)];
+       [for (i=vec) @func(i)];
 
 function filter(func, vec) = 
        [for (i=vec) if(@func(i)) i ]; 
