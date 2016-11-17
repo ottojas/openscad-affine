@@ -33,7 +33,7 @@ hull to create a path.  Each sublist represents one placement of the object.
 In the above, the [go(0)], sublist is to get an object at the origin.  [go(2)], 
 Moves the turtle forwards 20 units. Every sublist results in the placement of an object.
 
-See result image at: <https://github.com/ottojas/openscad-affine/images/oddpart.png>
+See result image at: <https://github.com/ottojas/openscad-affine/blob/master/images/oddpart.png>
 
 If you wish to see the locations without the connections change:
           
@@ -41,7 +41,7 @@ turtlePath(path){cube(5,center=true);}
 to:
 turtlePath(path,mod=0){cube(5,center=true);}
 
-See result image at: <https://github.com/ottojas/openscad-affine/images/oddpart.png>
+See result image at: <https://github.com/ottojas/openscad-affine/blob/master/images/oddpart2.png>
 
 The mod argument sets the objects that are connected by a convex hull.
 Each sublist represents a single object.  The above program produced 7 shapes
@@ -69,13 +69,13 @@ turtlePath(ladder,mod=[2,1]){sphere(.75);}
 turtlePath(ladder,mod=[1,2]){cube(1.5,center=true);}
 ```
 
-See result image at: <https://github.com/ottojas/openscad-affine/images/oddpart.png>
+See result image at: <https://github.com/ottojas/openscad-affine/blob/master/images/ladder.png>
 
 To see the effect of cycle, in the first program above, set cycle=true, invoke:
 
 turtlePath(path,cycle=true){cube(1,cycle=true);}
 
-See result image at: <https://github.com/ottojas/openscad-affine/images/oddpartCycle.png>
+See result image at: <https://github.com/ottojas/openscad-affine/blob/master/images/oddpart2Cycle.png>
 
 In summary, in the turtle system we are moving our coordinate system.  Each
 move applies an affine transform to the previous move.  Any affine transform
