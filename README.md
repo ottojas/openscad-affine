@@ -71,11 +71,11 @@ turtlePath(ladder,mod=[1,2]){cube(1.5,center=true);}
 
 See result image at: <https://github.com/ottojas/openscad-affine/blob/master/images/ladder.png>
 
-To see the effect of cycle, in the first program above, set cycle=true, invoke:
+To see the effect of cycle, in the first program above, the oddpart.scad program, set cycle=true, invoke:
 
-turtlePath(path,cycle=true){cube(1,cycle=true);}
+turtlePath(path,cycle=true){cube(1,center=true);}
 
-See result image at: <https://github.com/ottojas/openscad-affine/blob/master/images/oddpart2Cycle.png>
+See result image at: <https://github.com/ottojas/openscad-affine/blob/master/images/oddpartCycle.png>
 
 In summary, in the turtle system we are moving our coordinate system.  Each
 move applies an affine transform to the previous move.  Any affine transform
