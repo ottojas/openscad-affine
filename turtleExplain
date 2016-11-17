@@ -1,11 +1,3 @@
-# openscad-affine
-
-Main contents are: affine.scad transform library to import into openscad and turtle.scad library which uses affine.scad.
-Some documentation for affine is in a comment at the top of the affine.scad library.  The programs oddpart.scad, ladder.scad
-and airplane.scad are short programs that demonstrate turtle.scad usage.
-
-### turtle.scad Examples.
-
 An (invisible) turtle is sitting at the origin on the xy plane facing in the y direction.
 The command go(<distance>) moves it forward along the y axis.  
 
@@ -106,10 +98,6 @@ function lookAt(vec) = a_Xa(
                              )
                            );                           
 function lookGo(vec) = a_Xa(lookAt(vec),go(norm(vec)));
-```  
+```   
 
-Cavaet: turtlePath applied to non-convex objects in default mode will take much longer to render
-than applying turtlePath to the convex hull of the object.
 
-I would like to connect with some other methods than the hull, but that really is not easy
-without indirect passable functions.  On the other hand, these packages work in the current system.
